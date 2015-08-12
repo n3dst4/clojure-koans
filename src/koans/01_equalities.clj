@@ -33,4 +33,4 @@
   (= 'hello (symbol "hello"))
 
   "When things cannot be equal, they must be different"
-  (not= :fill-in-the-blank nil))
+  (not= :fill-in-the-blank 1))

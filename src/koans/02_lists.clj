@@ -30,7 +30,7 @@
   (= :a (peek '(:a :b :c :d :e)))
 
   "Or the others"
-  (=  (pop '(:a :b :c :d :e)))
+  (= '(2 3 4 5) (pop '(1 2 3 4 5)))
 
   "But watch out if you try to pop nothing"
   (= "No dice!" (try
@@ -43,4 +43,3 @@
            (rest '())
            (catch IllegalStateException e
              "No dice!"))))
-
